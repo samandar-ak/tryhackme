@@ -1,7 +1,31 @@
-Task 3. 
+Task 3. Probably Just Fine
 
 1. What is the ASN number related to the IP? 212238
 2. Which service is offered from this IP? VPN
 3. What is the filename of the file related to the hash? zY9sqWs.exe
 4. What is the threat signature that Microsoft assigned to the file? Trojan:Win32/LummaStealer.PM!MTB
+5. Based on its HTTPS certificate, how many domains are linked to the same campaign? 151
+6. What line is present in the rule's "condition" field? uint16(0) == 0x5a4d and any of them
+7. What is the title of the report mentioning this hash? Behind the Curtain: How Lumma Affiliates Operate
+8. Which team did the author of the malware start collaborating with in early 2024? GhostSocks
+9. Which mentioned infostealer targets Android systems? CraxsRAT
+10. Which MITRE ATT&CK sub-technique does this align with? T1583.003
+
+
+Task 4. Phishing Books
+
+1. Which specific check within the headers explains the bypass of email filters? DMARC=none
+2. What technique did the attacker use to make the message seem legitimate? Typosquatting
+3. Which MITRE technique and sub-technique ID best fit this sender address trick? T1583.001
+4. What is the file extension of the attached file? .HTML
+5. What is the MD5 hash of the .HTML file? 442f2965cb6e9147da7908bb4eb73a72
+6. What is the landing page of the phishing attack? http://lib-service.com:8083
+7. Which MITRE technique ID was used inside the attached file? T1027
+8. What is the hidden message the attacker left in the file? I love to phish books from libraries ^^
+9. Which line in the attached file is responsible for decoding the URL redirect? var src = reversed.split("").reverse().join("");
+10. What is the first URL in the redirect chain? http://xn--librarytlu-13cwe32432-kwr.com:8082
+11. What is the Threat Actor associated with this malicious file and/or URL? Cobalt Dickens | Silent Librarian
+12. What is the main target of this Threat Actor according to MITRE? Research and Proprietary Data
+
+
 
