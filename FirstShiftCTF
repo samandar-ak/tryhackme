@@ -80,5 +80,11 @@ Task 7. The Crown Jewel
 
 Task 8. Promotion Night
 
-Will upload tomorrow!
-
+1. What was the network share path where ransomware was placed? \\DC-01\SYSVOL\gaze.exe
+2. What is the value ransomware created to persist on reboot? BabyLockerKZ
+3. What was the most likely extension of the encrypted files? .danger17
+4. Which MITRE technique ID was used to deploy ransomware? T1047
+5. What ports of SRV-ITFS did the adversary successfully scan? 135, 139, 445, 3389, 5985
+6. What is the full path to the malware that performed the Discovery? C:\Windows\System32\fr-FR\ruche.dll
+7. Which artifact did the adversary create to persist on the beachhead? LanguageSync
+8. What is the MD5 hash of the embedded initial shellcode? 27B0D51406B5360B49D968D69DF0F3E6
